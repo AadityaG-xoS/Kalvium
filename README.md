@@ -1,6 +1,6 @@
 [STRUCTURE]
 
-1) Key-Insights.docx => A docx file containing the detailed analysis and the key insights of the Lok Sabha 2024 elections.
+1) Key-Insights.pdf => A pdf file containing the detailed analysis and the key insights of the Lok Sabha 2024 elections.
 
 
 2) Lok-Sabha-2024.py => A python file with the code to scrape,save and visualize data using libraries.
