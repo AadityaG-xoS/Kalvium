@@ -1,3 +1,8 @@
+# This Python code scrapes live election results from a specified URL, processes the data, and visualizes the outcomes.
+# It fetches HTML content using `requests`, parses it with `BeautifulSoup`, and extracts relevant data into a pandas DataFrame. 
+# The data is saved to a CSV file and cleaned by removing missing values.
+# This process allows for real-time analysis and visualization of election results, providing insights into the performance of different political parties. 
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -55,7 +60,7 @@ def plot_pie_chart(df):
         wedges, _, autotexts = plt.pie(df['Won'], autopct='%1.1f%%', startangle=140, colors=colors)
         plt.legend(wedges, df['Party'], title="Parties", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
         plt.axis('equal')
-        plt.title('Party-wise Vote Share')
+        plt.title('party-wise vote Share')
         plt.tight_layout()
         plt.savefig('party_wise_vote_share.png')
         plt.show()
@@ -85,7 +90,7 @@ def main():
 
     if soup:
         df = extract_data(soup)
-        save_to_csv(df, r'C:\Users\Aaditya G\Desktop\Projects\Lok-Sabha-2024.csv')
+        save_to_csv(df, r'C:\Users\Aaditya G\Desktop\Projects\election_results.csv')
 
         df = load_and_clean_csv('election_results.csv')
 
