@@ -9,4 +9,4 @@
 3) Lok-Sabha-Share-2024.ipynb => A detailed python notebook containing the outputs and working of the python code in the Jupyter environment.
 
 
-4) election_results.csv => The Dataset scraped from the live website "https://results.eci.gov.in" 
+4) Election_results.csv => The Dataset scraped from the live website "https://results.eci.gov.in" 
